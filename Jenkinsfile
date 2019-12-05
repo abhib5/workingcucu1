@@ -24,7 +24,7 @@ pipeline {
 		
 		stage("Email"){
 			steps{
-				emailext (to: 'abhinavlanka179@gmail.com', replyTo: 'abhinavlanka179@gmail.com', subject: "Email Report from - '${env.JOB_NAME}' ");
+				emailext (to: 'abhinavlanka179@gmail.com', replyTo: 'abhinavlanka179@gmail.com', subject: "Email Report");
 			}
 		}
 	}
